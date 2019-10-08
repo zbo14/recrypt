@@ -10,7 +10,7 @@ decrypt "$1"
 
 read -p "Press enter to continue..."
 
-dir="$(dirname $1)"
+dir="$(dirname "$1")"
 base="$(basename "$(basename "$1" .gpg)" .zip)"
 
 encrypt "$dir/$base"

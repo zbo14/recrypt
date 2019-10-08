@@ -2,7 +2,7 @@
 
 if [[ -z "$1" ]]
 then
-  echo 'Usage: decrypt PATH'
+  echo "Usage: decrypt PATH"
   exit
 fi
 

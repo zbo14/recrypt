@@ -2,7 +2,7 @@
 
 if [[ -z "$1" ]]
 then
-  echo "Usage: recrypt PATH"
+  echo "Usage: recrypt /path/to/thing"
   exit
 fi
 

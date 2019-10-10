@@ -2,8 +2,8 @@
 
 if [[ -z "$1" ]]
 then
-  echo "Usage: encrypt PATH"
-  exit
+  echo "Usage: encrypt /path/to/thing"
+  exit 1
 fi
 
 base="$(basename "$1")"
@@ -25,5 +25,5 @@ then
   gpgconf --reload gpg-agent
   rm "$base"
 else
-  echo "No file $base"
+  echo "No file or directory $base!"
 fi

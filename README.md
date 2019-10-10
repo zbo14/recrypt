@@ -1,8 +1,9 @@
 # recrypt
 
 ## Install
+Make sure you have [GPG](https://www.gnupg.org/) and `zip` on your system.
 
-Clone the repo, `cd` into it, and `sudo sh install.sh`.
+Then clone the repo, `cd` into it, and `sh install.sh`.
 
 ## Usage
 
@@ -17,14 +18,14 @@ If you encrypt a file, the result will be written to `/path/to/thing.gpg`. If yo
 
 ### Decrypt
 ```
-$ decrypt /path/to/*.gpg
+$ decrypt /path/to/thing
 ```
 
 Decrypt an encrypted file or directory - you'll be prompted for a password.
 
 ### Recrypt
 ```
-$ recrypt /path/to/*.gpg
+$ recrypt /path/to/thing
 ```
 
 Decrypt an encrypted file or directory and re-encrypt its contents.
